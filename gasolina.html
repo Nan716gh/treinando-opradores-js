@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    var tanque = 40;
+    var caminhoComGasolina = 480;
+    var caminhoComAlcool = 300;
+     var precoDagasolina = 2.09;
+    var precoDoalcool = 2.40;
+    var consumoDeGasolina = caminhoComGasolina / tanque;
+    var consumoDeAlcool = caminhoComAlcool / tanque;
+    var consumoDeGasolinakm = precoPorquilometro/consumoDeGasolina; 
+    var consumoDeAlcoolkm = precoPorlitro / precoPorquilometro;
+    var precoPorquilometro = consumoDeGasolina/ precoPorlitro;
+
+    document.write(`
+    Para o consumo de gasolina temos resultado de ${caminhoComGasolina} km dividido por ${consumoDeGasolina} valor = ${consumoDeGasolina} km/L.
+    <br>
+    Para o consumo de alcool temos o resultado de ${caminhoComAlcool} km dividido por ${consumoDeAlcool} valor = ${consumoDeAlcool} km/L.
+    <br>
+    Para o preço da gasolina por litro o resultado de ${consumoDeGasolina} km dividido por ${precoPorlitro} valor = ${precoPorquilometro} km/L
+    <br>
+    Para o preço do alcool por litro o resultado de ${consumoDeAlcool}km dividido por ${precoPorlitro} valor = ${precoPorquilometro} km/L
+
+
+    `)
+    
+   </script> 
+</body>
+</html
